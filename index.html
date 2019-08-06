@@ -1,0 +1,73 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<title>남서울 멀티쇼핑몰 </title>
+
+ <style type="text/css">
+     a:link { text-decoration: none; color: black; }           <!-- 클릭하기전의 설정은 선없고 검정색 -->
+     a:visited { text-decoration: none; color: black; }     <!-- 방문한뒤의 설정은 밑줄없고 검정 -->
+     a:hover { text-decoration: underline; color:blue; } <!-- 마우스가 올라갈때 설정은 아랫줄있고 파랑 -->
+ </style>
+
+</head>
+
+<body>
+<table border="0" width="980" align="center" height="800" style="font-size:10pt;font-family:맑은 고딕">
+    <tr>
+        <td width="980" colspan="2" height="114">
+		    <p align="right"><font face="맑은 고딕" style="font-size:9pt;">
+			<a href="index.html" target=_parent>Home</a>&nbsp;&nbsp;|&nbsp; 
+			<a href="login.jsp" target=main>로그인</a>&nbsp;&nbsp;|&nbsp; 
+			<a href="insertMember.jsp" target=main>회원가입</a>&nbsp;&nbsp;|&nbsp; 
+			<a href="login.jsp" target=main>장바구니</a>&nbsp;&nbsp;|&nbsp; 
+			<a href="login.jsp" target=main>마이페이지</a>&nbsp;&nbsp;|&nbsp; 
+			<a href="note.jsp" target=main>사이트맵</a>&nbsp;&nbsp;|&nbsp; 
+			<a href="javascript:void(0)" onClick="window.external.AddFavorite(parent.location.href, document.title);">즐겨찾기</a>&nbsp;&nbsp;&nbsp; 	
+			</font><br><br>
+			&nbsp;&nbsp; 
+
+            <p align="center"><font face="맑은 고딕" style="font-size:11pt;">
+	<!--    ctgType에 특정값을 넘겨주면서 viewProduct.jsp를 호출하고 있음에 유의할 것!  -->
+	<!--    category별(상품그룹별)  상품목록을 조회할 수 있도록 처리해 주고 있음 -->
+			<a href="viewProduct.jsp?ctgType=category1"  target=main>휴대폰/스마트폰
+			</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="viewProduct.jsp?ctgType=category2" target=main>노트북/데스크탑</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="viewProduct.jsp?ctgType=category3"  target=main>디카/주방가전
+			</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="viewProduct.jsp?ctgType=category4"  target=main>TV/모니터</a> </font><br>
+            <hr>
+        </td>
+    </tr>
+
+    <tr>
+        <td  width="900" height="600">
+            <p align=center><iframe src="main.html" frameborder="0" width=900  height=700 scrolling=auto name=main ></iframe>   <!-- iframe 사용,  iframe의 name속성값은 "main" 임에 유의할 것 -->
+        </td>
+        <td width="80">
+			<a href="note.jsp" target=main><img src="images/leftbanner1.jpg" width=70 height=180  border="0"></a><br><br>
+			<a href="http://www.nsu.ac.kr"  target=_blank><img src="images/jobs.gif"  width=70 height=70 border="0"></a><br><br>
+			 <a href="note.jsp"  target=main><img src="images/secretu.gif"  border="0"></a>
+		</td>
+    </tr>
+
+    <tr>
+        <td width="980" colspan="2">
+        <center>
+		  <br>
+           <a href="note.jsp" target=main>회사소개</a>&nbsp&nbsp |&nbsp&nbsp 
+		   <a href="note.jsp" target=main>채용정보</a>&nbsp&nbsp|&nbsp&nbsp 
+		   <a href="note.jsp" target=main>이용약관</a>&nbsp&nbsp|&nbsp&nbsp
+		   <a href="qna.html" target=main>고객센터</a>&nbsp&nbsp|&nbsp&nbsp
+		   <a href="note.jsp" target=main>개인정보취급방침</a>&nbsp&nbsp|&nbsp&nbsp
+		   <a href="note.jsp" target=main>광고문의</a>&nbsp&nbsp|&nbsp&nbsp
+		   <a href="manager_login.jsp" target=main>관리자로그인</a>
+		   <br><br>
+        <font size="2">고객센터: 041-580-7777&nbsp&nbsp&nbsp상담가능시간: 오전9시~오후6시 (토요일 및 공휴일은 휴무)&nbsp&nbsp <br>
+		주소:  충남 천안시 서북구 성환읍 매주리 21&nbsp&nbsp&nbsp 이메일: multimedia@nsu.ac.kr</font>
+        </center>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+
